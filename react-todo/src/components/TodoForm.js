@@ -1,7 +1,7 @@
-import React, { usedState } from "react";
+import React, { useState } from 'react';
 
 function TodoForm() {
-  const [input, setInputs] = usedState("");
+  const [input, setInput] = useState('');
   return (
     <form className='todo-form'>
       <input
@@ -11,6 +11,7 @@ function TodoForm() {
         name='text'
         className='todo-input'
       />
+      <button className='todo-button'>Add todo</button>
     </form>
   );
 }
